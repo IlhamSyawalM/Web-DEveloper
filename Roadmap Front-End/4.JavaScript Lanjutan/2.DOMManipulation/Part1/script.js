@@ -10,8 +10,8 @@ sectionA.style.backgroundColor = "lightblue";
 sectionA.style.color = "salmon";
 
 // element.setAttribute()
-const judul = document.getElementsByTagName("h1")[0];
-judul.setAttribute("class", "Ilham");
+const Judul = document.getElementsByTagName("h1")[0];
+Judul.setAttribute("class", "Ilham");
 
 const a = document.querySelector("#a a");
 a.setAttribute("id", "link");
