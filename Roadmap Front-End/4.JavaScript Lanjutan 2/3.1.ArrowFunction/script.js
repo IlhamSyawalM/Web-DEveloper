@@ -41,6 +41,7 @@ let mahasiswa = ["Ilham Syawal M", "Jihan Febrizki", "Shanum"];
 let totalHuruf = mahasiswa.map((nama) => nama.length);
 
 console.log(totalHuruf);
+console.table(totalHuruf);
 
 // return object
 

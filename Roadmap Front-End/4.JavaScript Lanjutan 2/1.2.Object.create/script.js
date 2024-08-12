@@ -1,4 +1,4 @@
-// // ! Tanpa menggunakan object.create() !
+ // ! Tanpa menggunakan object.create() !
 
 // const methodMahasiswa = {
 //   makan: function (porsi) {
