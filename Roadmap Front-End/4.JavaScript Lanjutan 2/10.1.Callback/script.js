@@ -19,7 +19,7 @@ function tampil(name) {
   name(isi);
 }
 
-tampil((isi) => alert(`Halo, ${isi}`));
+tampil((isi) => alert(`Halo semuanya, ${isi}`));
 
 //! Asynchronous Function
 
@@ -51,6 +51,7 @@ console.log("Mulai 1");
 mhs.forEach((m) => {
   for (let c = 0; c < 1000000; c++) {
     let date = new Date();
+    // console.log(date);  
   }
   console.log(m.nama);
 });
@@ -80,7 +81,7 @@ function getDataMahasiswa(url, success, error) {
 
 function success(result) {
   const isi = JSON.parse(result);
-  isi.forEach((m) => console.log(m.nama));
+  isi.forEach((m) => console.log(m.nim));
 }
 
 function error() {

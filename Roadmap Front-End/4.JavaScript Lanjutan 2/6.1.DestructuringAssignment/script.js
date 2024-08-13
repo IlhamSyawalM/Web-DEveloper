@@ -77,7 +77,7 @@ const umurku = mhs.umur;
 // Cara baru
 const { nama, umur } = mhs;
 
-console.log(umur);
+console.log(nama);
 console.log("------------");
 console.log("------------");
 console.log("------------");

@@ -87,6 +87,6 @@ const maha = {
 };
 
 for (const x in maha) {
-  console.log(x);
-  console.log(maha[x]);
+  console.log(x); //Nama variable
+  console.log(maha[x]); //Isi vairable
 }
