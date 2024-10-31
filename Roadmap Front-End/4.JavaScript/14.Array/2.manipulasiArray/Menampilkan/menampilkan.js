@@ -32,6 +32,11 @@ satu.forEach(function (e) {
   console.log(e);
 });
 
+// or using Arrow function like this
+satu.forEach((e) => {
+  console.log(e);
+});
+
 console.log(" ");
 console.log(" ");
 console.log(" ");
@@ -74,7 +79,24 @@ console.log(" ");
 console.log(" ");
 
 // !Method find
-var coba = x.find(function(b) {
+var coba = x.find(function (b) {
   return b > 5;
 });
 console.log(coba);
+
+console.log(" ");
+console.log(" ");
+console.log(" ");
+
+// !Method findIndex
+var hasil = satu.findIndex((e) => {
+  return e == "Mustaqim";
+});
+console.log(hasil);
+
+//  !Method Every (melakukan cek ke semua isi array, dengan return keseluruhan)
+console.log(
+  angka.every((e) => {
+    return e > 0;
+  })
+);
