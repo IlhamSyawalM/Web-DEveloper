@@ -80,3 +80,6 @@ function mahasiswa(nama, energi) {
 
 let ilham = mahasiswa("Ilham Syawal Mustaqim", 20);
 let jihan = mahasiswa("Jihan Febrizki", 20);
+
+delete ilham.energi;
+console.log(ilham)
