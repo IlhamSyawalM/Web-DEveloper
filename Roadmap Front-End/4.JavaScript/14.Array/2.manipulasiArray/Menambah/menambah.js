@@ -16,3 +16,6 @@ console.log(satu);
 // !dengan splice
 satu.splice(3, 0, "Shanum");
 console.log(satu);
+
+const gaje = new Array(1, "shanum", "nuna");
+console.log(gaje)
