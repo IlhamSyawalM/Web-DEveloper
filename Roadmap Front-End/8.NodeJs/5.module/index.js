@@ -1,6 +1,6 @@
 //! Untuk web
-// showName("ilham");
 // console.log(showName("Ilham"));
+// showName("ilham");
 
 //! Untuk Node
 
