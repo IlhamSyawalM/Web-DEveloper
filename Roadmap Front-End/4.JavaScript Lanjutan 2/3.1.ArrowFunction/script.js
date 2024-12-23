@@ -16,10 +16,10 @@ console.log(hasil("ilham"));
 // Tanpa argument
 let enol = () => `Hello World !`;
 
-// Satu argument
+// Satu argument (gaperlu return)
 let satu = (kita) => `Halo, ${kita}`;
 
-// Banyak argument
+// Banyak argument (harus pake return)
 let baru = (parameter, waktu) => {
   return `Hai, ${parameter}. Sekarang jam ${waktu}`;
 };
