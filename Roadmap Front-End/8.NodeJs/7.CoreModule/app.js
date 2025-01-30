@@ -36,10 +36,10 @@ const rl = readLine.Interface({
   output: process.stdout,
 });
 
-// rl.question("Masukan nama anda : ", (nama) => {
-//   console.log(`Terima Kasih ${nama}`);
-//   rl.close();
-// });
+rl.question("Masukan nama anda : ", (nama) => {
+  console.log(`Terima Kasih ${nama}`);
+  rl.close();
+});
 
 // rl.question("Masukan nama anda : ", (nama) => {             //? Membuat pertanyaan lebih dari 1
 //   rl.question("Masukan No Telepon anda : ", (no) => {

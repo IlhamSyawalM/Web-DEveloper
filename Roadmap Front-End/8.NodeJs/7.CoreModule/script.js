@@ -1,14 +1,30 @@
 const fs = require("fs");
-const readLine = require("readLine");
+const readLine = require("readline");
 
 const rl = readLine.Interface({
   input: process.stdin,
   output: process.stdout,
 });
 
-//! 1. Ambil data dari jsonya pake readFile
+//! 1. Membuat question untuk mengambil data yg dibutuhkan
+rl.question("Masukan Nama anda : ", (nama) => {
+  rl.question("Masukan no Telepon anda : ", (no) => {
+    //Memasukan data yg didapatkan menjadi array
+    const contact = { nama, no };
 
-//! 2. Tambahin datanya dari inputan pake append data di array
-//? 2.1 Inputan pake question & simpen ke variable sementara
+    //! 2. Ambil data dari jsonya pake readFile
+    const readFile = fs.readFileSync("data/contact.json", "utf-8");
+    if (readFile.length != 0) {
+      //merubah data menjadi array
+      const contacts = JSON.parse(readFile);
+      //Memasukan data ke array
+      contacts.push(contact);
 
-//! 3. Timpa data dala pake data baru.
+      //! 3. Timpa data dala pake data baru.
+      //Memasukan data array ke file json, tetapi harus dijadikan string
+      fs.writeFileSync("data/contact.json", JSON.stringify(contacts));
+      console.log(contacts);
+    }
+    rl.close();
+  });
+});

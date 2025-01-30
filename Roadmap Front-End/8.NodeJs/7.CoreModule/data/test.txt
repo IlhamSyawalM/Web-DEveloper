@@ -1,1 +1,1 @@
-Hello world scara Asynchronous2
+Hello World secara Synchronous!
